@@ -1,0 +1,22 @@
+/* Start Page Elements */
+html {
+  background: lightgreen;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.title {
+  background: white;
+  padding: 50px;
+  margin: 100px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 30px;
+}
+
+.question {
+  background: white;
+  font-size: 0.85rem;
+}
