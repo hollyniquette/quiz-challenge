@@ -12,79 +12,115 @@
 
   <header>
     <div class="high-score">
-      <a href="#">View Scores</a>
+      <a href="#" id="view-scores">View Scores</a>
     </div>
     <div class="timer">
-      <p>timer</p>
+      <p id="timer">60</p>
     </div>
   </header>
 
   <body>
     <!-- Begin Quiz Page -->
-    <div class="title">
+    <div class="title" id="begin">
       <h1>Welcome to Javascript: the Fundamentals</h1>
       <p>
         Do you know the fundamentals of how javascript works? Find out by taking
         this quiz!
       </p>
-      <a href="begin-button">Begin Quiz</a>
+      <a href="#" id="begin-button">Begin Quiz</a>
     </div>
 
     <div class="question" id="question-1">
-      <h2>Question 1</h2>
-      <a href="#">A</a>
-      <a href="#">B</a>
-      <a href="#">C</a>
-      <a href="#">D</a>
+      <h2>What is the correct way to write a JavaScript array?</h2>
+      <input type="radio" id="q1a1" name="question-1" value="incorrect" />
+      <label for="q1a1">A. let colors = "red", "blue", "green";</label><br />
+      <input type="radio" id="q1a2" name="question-1" value="incorrect" />
+      <label for="q1a2">B. let colors = array("red", "blue", "green");</label
+      ><br />
+      <input type="radio" id="q1a3" name="question-1" value="correct" />
+      <label for="q1a3">C. let colors = ["red", "blue", "green"];</label><br />
+      <input type="radio" id="q1a4" name="question-1" value="incorrect" />
+      <label for="q1a4">D. let colors = (1:"red", 2:"blue", 3:"green");</label
+      ><br />
     </div>
 
     <div class="question" id="question-2">
-      <h2>Question 2</h2>
-      <a href="#">A</a>
-      <a href="#">B</a>
-      <a href="#">C</a>
-      <a href="#">D</a>
+      <h2>Which of the following will return the type of a variable?</h2>
+      <input type="radio" id="q2a1" name="question-2" value="incorrect" />
+      <label for="q2a1">A. type(variable);</label><br />
+      <input type="radio" id="q2a2" name="question-2" value="correct" />
+      <label for="q2a2">B. typeof variable;</label><br />
+      <input type="radio" id="q2a3" name="question-2" value="incorrect" />
+      <label for="q2a3">C. variable.type();</label><br />
+      <input type="radio" id="q2a4" name="question-2" value="incorrect" />
+      <label for="q2a4">D. getType(variable);</label><br />
     </div>
 
     <div class="question" id="question-3">
-      <h2>Question 3</h2>
-      <a href="#">A</a>
-      <a href="#">B</a>
-      <a href="#">C</a>
-      <a href="#">D</a>
+      <h2>
+        What will the following code output? console.log(0.1 + 0.2 === 0.3);
+      </h2>
+      <input type="radio" id="q3a1" name="question-3" value="incorrect" />
+      <label for="q3a1">A. true</label><br />
+      <input type="radio" id="q3a2" name="question-3" value="correct" />
+      <label for="q3a2">B. false</label><br />
+      <input type="radio" id="q3a3" name="question-3" value="incorrect" />
+      <label for="q3a3">C. null</label><br />
+      <input type="radio" id="q3a4" name="question-3" value="incorrect" />
+      <label for="q3a4">D. undefined</label><br />
     </div>
 
     <div class="question" id="question-4">
-      <h2>Question 4</h2>
-      <a href="#">A</a>
-      <a href="#">B</a>
-      <a href="#">C</a>
-      <a href="#">D</a>
+      <h2>How do you declare a function in JavaScript?</h2>
+      <input type="radio" id="q4a1" name="question-4" value="incorrect" />
+      <label for="q4a1">A. function = myFunction() {} </label><br />
+      <input type="radio" id="q4a2" name="question-4" value="correct" />
+      <label for="q4a2">B. function myFunction() {}</label><br />
+      <input type="radio" id="q4a3" name="question-4" value="incorrect" />
+      <label for="q4a3">C. myFunction := function() {}</label><br />
+      <input type="radio" id="q4a4" name="question-4" value="incorrect" />
+      <label for="q4a4">D. let myFunction() = {}</label><br />
     </div>
 
     <div class="question" id="question-5">
-      <h2>Question 5</h2>
-      <a href="#">A</a>
-      <a href="#">B</a>
-      <a href="#">C</a>
-      <a href="#">D</a>
+      <h2>
+        What method can be used to transform a string into an array based on a
+        specified delimiter?
+      </h2>
+      <input type="radio" id="q5a1" name="question-5" value="correct" />
+      <label for="q5a1">A. split()</label><br />
+      <input type="radio" id="q5a2" name="question-5" value="incorrect" />
+      <label for="q5a2">B. slice()</label><br />
+      <input type="radio" id="q5a3" name="question-5" value="incorrect" />
+      <label for="q5a3">C. join()</label><br />
+      <input type="radio" id="q5a4" name="question-5" value="incorrect" />
+      <label for="q5a4">D. divide()</label><br />
     </div>
 
     <!-- End of Quiz Page -->
-    <div class="End">
+    <div class="end" id="end">
       <h2>All finished!</h2>
-      <p>placeholder score</p>
-      <a href="#">Start Over</a>
+      <p id="score"></p>
+      <p id="end-text"></p>
+      <input type="text" id="initials" placeholder="Enter Initials" />
+      <a href="#" id="submit-high-score">Submit Score</a>
+      <a href="#" id="start-over">Start Over</a>
     </div>
-  </body>
 
-  <!--  -->
-  <footer>
-    <a href="#">Go Back</a>
-    <a href="#">Clear Scores</a>
-    <a href="#">Correct</a>
-    <a href="#">Try Again</a>
-  </footer>
+    <div class="modal" id="modal">
+      <h2>High Scores</h2>
+      <ol id="high-score-list"></ol>
+      <a href="#" id="close-modal">Close</a>
+    </div>
+
+    <!--  -->
+    <footer>
+      <p href="#" id="feedback"></p>
+      <div class="right-content">
+        <a href="#" id="next-question">Next Question</a>
+      </div>
+    </footer>
+  </body>
 
   <script src="./script.js"></script>
 </html>

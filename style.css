@@ -1,8 +1,35 @@
 /* Start Page Elements */
 html {
   background: lightgreen;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between; /* This places divs at opposite sides */
+  align-items: center; /* This vertically centers the content */
+  background-color: #ffffff; /* Example background color */
+  padding: 10px 20px; /* Example padding */
+  width: 100%; /* Example width */
+}
+
+body {
+  position: relative; /* To position the cards within this container */
+  width: 95%; /* Set your desired width */
+  height: 90%; /* Set your desired height */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  padding: 10px 20px;
+  margin-top: auto;
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -10,13 +37,49 @@ html {
   padding: 50px;
   margin: 100px;
   text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  flex: 1;
 }
 
 .title h1 {
   font-size: 30px;
 }
 
-.question {
+.question,
+.end {
   background: white;
   font-size: 0.85rem;
+  height: 300px;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  visibility: hidden;
+  top: 20%;
+  left: 20%;
+  flex: 1;
+}
+
+.modal {
+  background: white;
+  font-size: 0.85rem;
+  width: 80%;
+  height: 65%;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  display: none;
+  top: 10%;
+  left: 5%;
+  flex: 1;
+}
+
+#feedback {
+  text-align: center;
+}
+
+.right-content {
+  text-align: right;
+  visibility: hidden;
 }
